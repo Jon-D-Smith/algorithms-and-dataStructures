@@ -14,9 +14,21 @@ function reverseStringB (str) {
     return str.split('').reverse().join('')
 }
 
+// For of loop
+let reversed = '';
+function reverseStringC(str) {
+    for(let char of str){
+        reversed = char + reversed
+    }
+    return reversed
+}
+
 // Testing function - Expects olleh
 const output = reverseString('hello')
 console.log(output)
 
 const outputB = reverseStringB('hello')
 console.log(outputB)
+
+const outputC = reverseStringC('hello')
+console.log(outputC)
