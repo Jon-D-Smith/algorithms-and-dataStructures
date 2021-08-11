@@ -1,10 +1,9 @@
 // Reversing a string without the reverse Method
 function reverseString(str) {
-    const strArr = str.split('')
     const newArr = []
 
     for(let i = 0; i < str.length; i++){
-        newArr.unshift(strArr[i])
+        newArr.unshift(str[i])
     }
     return newArr.join('')
 
@@ -12,8 +11,7 @@ function reverseString(str) {
 
 //Reversing a string with the reverse method
 function reverseStringB (str) {
-    const strArr = str.split('')
-    return strArr.reverse().join('')
+    return str.split('').reverse().join('')
 }
 
 // Testing function - Expects olleh
