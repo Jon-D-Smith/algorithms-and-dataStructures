@@ -23,6 +23,16 @@ function reverseStringC(str) {
     return reversed
 }
 
+// for each loop
+let revStr = '';
+
+function reverseStringD(str) {
+    str.split('').forEach(letter => {
+        revStr = letter + revStr
+    })
+    return revStr
+}
+
 // Testing function - Expects olleh
 const output = reverseString('hello')
 console.log(output)
@@ -32,3 +42,6 @@ console.log(outputB)
 
 const outputC = reverseStringC('hello')
 console.log(outputC)
+
+const outputD = reverseStringD('hello')
+console.log(outputD)
