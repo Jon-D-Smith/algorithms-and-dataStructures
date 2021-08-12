@@ -5,4 +5,4 @@ function isPalindromeA(str) {
 
 
 
-console.log(isPalindrome("wow"))
+console.log(isPalindromeA("racecar"))
