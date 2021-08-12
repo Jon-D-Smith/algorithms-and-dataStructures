@@ -33,6 +33,12 @@ function reverseStringD(str) {
     return revStr
 }
 
+function reverseStringE(str) {
+    return str.split('').reduce((revStr, char) => {
+        return char + revStr
+    }, '')
+}
+
 // Testing function - Expects olleh
 const output = reverseString('hello')
 console.log(output)
@@ -45,3 +51,6 @@ console.log(outputC)
 
 const outputD = reverseStringD('hello')
 console.log(outputD)
+
+const outputE = reverseStringE('hello')
+console.log(outputE)
