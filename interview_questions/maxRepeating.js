@@ -18,7 +18,31 @@ function maxRepeating(str) {
     return winner
 }
 
+function maxRepeatingB(str){
+    const charMap = {}
+    let maxNum = 0
+    let maxChar = ''
+
+    str.split('').forEach( char => {
+        if(charMap[char]){
+            charMap[char]++
+        } else {
+            charMap[char] = 1
+        }
+    })
+    for(let char in charMap) {
+        if(charMap[char] > maxNum){
+            maxNum = charMap[char]
+            maxChar = char
+        }
+    }
+
+    return maxChar
+}
+
 //expects a
 console.log(maxRepeating('javascript'))
 //expects o
 console.log(maxRepeating('loop de loop'))
+//expects a
+console.log(maxRepeatingB('javascript'))
