@@ -8,5 +8,9 @@ function capitalizeA(str) {
     return strArr.join(' ')
 }
 
+function capitalizeB(str) {
+    return str.toLowerCase().split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
+}
 
 console.log(capitalizeA("hello my friends"))
+console.log(capitalizeB("i love javascript"))
