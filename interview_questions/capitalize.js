@@ -12,5 +12,11 @@ function capitalizeB(str) {
     return str.toLowerCase().split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
 }
 
+//Cheeky solution I found from Brad Traversy -- NOT MINE --
+function capitalizeC(str) {
+    return str.replace(/\b[a-z]/gi, (char) => char.toUpperCase())
+}
+
 console.log(capitalizeA("hello my friends"))
 console.log(capitalizeB("i love javascript"))
+console.log(capitalizeC("i love javascript"))
