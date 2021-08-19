@@ -28,18 +28,18 @@ Example of running the fizzBuzz interview question:
 node interview_questions/fizzBuzz
 ```
 
-## Search Algorithms
+## Categories
 
-### linear_search
+### Search Algorithms
 
-- Category
+- Linear Search
+  - Linear search is O(n) and is best used on unsorted arrays
+- Binary Search
+  - Binary search is O(log n) and is best used on sorted arrays
 
-Searching algorithm
+### Sorting Algorithms
 
-- Big O
-
-Linear search is O(n). This means that in worst case scenario, this algorithm will run 'N' times, or the length of the array.
-
-- Use Cases
-
-Linear search is best used on an unsorted array, as we do not have enough information to use more sophisticated searching algorithms.
+- Bubble Sort
+  - Bubble sort is O(n^2)
+- Selection Sort
+  - Selection sort is O(n^2)
