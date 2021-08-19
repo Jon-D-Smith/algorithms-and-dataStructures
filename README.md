@@ -28,20 +28,18 @@ Example of running the fizzBuzz interview question:
 node interview_questions/fizzBuzz
 ```
 
-## Explanations
-
-I will update this section with pertinent explinations of algorithms.
+## Search Algorithms
 
 ### linear_search
 
-#### Category
+- Category
 
 Searching algorithm
 
-#### Big O
+- Big O
 
 Linear search is O(n). This means that in worst case scenario, this algorithm will run 'N' times, or the length of the array.
 
-#### Use Cases
+- Use Cases
 
 Linear search is best used on an unsorted array, as we do not have enough information to use more sophisticated searching algorithms.
