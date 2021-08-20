@@ -1,7 +1,7 @@
 const array = [4,2,7,1,3]
 
 function insertionSort(array) {
-    for(let i = 0; i < array.length; i++) {
+    for(let i = 1; i < array.length; i++) {
         let temp_value = array[i]
         let position = i - 1
 
