@@ -1,5 +1,5 @@
-const array = [4,2,7,1,3]
-
+// const array = [4,2,7,1,3]
+const array = [1, 2, 5, 4, 3]
 function insertionSort(array) {
     for(let i = 1; i < array.length; i++) {
         let temp_value = array[i]
