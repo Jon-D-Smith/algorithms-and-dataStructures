@@ -14,3 +14,5 @@ function wordBuilder(array) {
 }
 
 console.log(wordBuilder(array))
+
+// This function is O(n^2) which marks it as a relatively slow algorithm
