@@ -1,56 +1,57 @@
+// Reverse a string
+
 // Reversing a string without the reverse Method
 function reverseString(str) {
-    const newArr = []
+  const newArr = [];
 
-    for(let i = 0; i < str.length; i++){
-        newArr.unshift(str[i])
-    }
-    return newArr.join('')
-
+  for (let i = 0; i < str.length; i++) {
+    newArr.unshift(str[i]);
+  }
+  return newArr.join("");
 }
 
 //Reversing a string with the reverse method
-function reverseStringB (str) {
-    return str.split('').reverse().join('')
+function reverseStringB(str) {
+  return str.split("").reverse().join("");
 }
 
 // For of loop
-let reversed = '';
+let reversed = "";
 function reverseStringC(str) {
-    for(let char of str){
-        reversed = char + reversed
-    }
-    return reversed
+  for (let char of str) {
+    reversed = char + reversed;
+  }
+  return reversed;
 }
 
 // for each loop
-let revStr = '';
+let revStr = "";
 
 function reverseStringD(str) {
-    str.split('').forEach(letter => {
-        revStr = letter + revStr
-    })
-    return revStr
+  str.split("").forEach((letter) => {
+    revStr = letter + revStr;
+  });
+  return revStr;
 }
 
 function reverseStringE(str) {
-    return str.split('').reduce((revStr, char) => {
-        return char + revStr
-    }, '')
+  return str.split("").reduce((revStr, char) => {
+    return char + revStr;
+  }, "");
 }
 
 // Testing function - Expects olleh
-const output = reverseString('hello')
-console.log(output)
+const output = reverseString("hello");
+console.log(output);
 
-const outputB = reverseStringB('hello')
-console.log(outputB)
+const outputB = reverseStringB("hello");
+console.log(outputB);
 
-const outputC = reverseStringC('hello')
-console.log(outputC)
+const outputC = reverseStringC("hello");
+console.log(outputC);
 
-const outputD = reverseStringD('hello')
-console.log(outputD)
+const outputD = reverseStringD("hello");
+console.log(outputD);
 
-const outputE = reverseStringE('hello')
-console.log(outputE)
+const outputE = reverseStringE("hello");
+console.log(outputE);

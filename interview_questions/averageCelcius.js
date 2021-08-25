@@ -1,3 +1,6 @@
+// A news site would like to take the farenheit readings from all of their local thermometers, then provide an average temperature in both farenheit and celcius.
+// Please build a calculator to take the farenheit readings and convert them to the average temperature in celsius
+
 const farenheit_readings = [92, 90, 91, 95, 91, 92];
 
 function averageCelcius(farenehit_readings) {
