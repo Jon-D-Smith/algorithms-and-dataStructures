@@ -49,10 +49,15 @@ function isSubsetHash(array1, array2) {
   }
 
   for (const value of smallerArray) {
-    if (hashTable[value]) {
+    if (!hashTable[value]) {
       return false;
     }
   }
+
+  return true;
 }
 
 console.log(isSubset(array1, array2));
+console.log(isSubset(array1, array3));
+console.log(isSubsetHash(array1, array2));
+console.log(isSubsetHash(array1, array3));
