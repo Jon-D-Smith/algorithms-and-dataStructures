@@ -20,4 +20,5 @@ function nonRepeater(string) {
   return "all letters are repeated";
 }
 
+// Expects n
 console.log(nonRepeater(string));
