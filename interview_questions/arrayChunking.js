@@ -22,4 +22,17 @@ console.log(newArr)
 
 }
 
+
+function arrayChunksB(array, length){
+    let chunkedArr = []
+    let i = 0;
+
+    while( i < array.length) {
+       chunkedArr.push(array.slice(i, i + length)) 
+       i+=length
+    }
+    return chunkedArr
+}
+
 arrayChunks(array, 3)
+console.log(arrayChunksB(array, 3))
