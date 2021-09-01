@@ -34,5 +34,23 @@ function arrayChunksB(array, length){
     return chunkedArr
 }
 
+// Using a foreach on the array itsself
+function arrayChunksC(array, len){
+    const chunkedArr = []
+    array.forEach((val) => {
+        const last = chunkedArr[chunkedArr.length - 1]
+    
+        // Check if there is a last and if last.length = to chunk length
+        if(!last || last.length === len){
+            chunkedArr.push([val])
+        } else {
+            last.push(val)
+        }
+    })
+    return chunkedArr
+}
+
+
 arrayChunks(array, 3)
 console.log(arrayChunksB(array, 3))
+console.log(arrayChunksC(array, 3))
