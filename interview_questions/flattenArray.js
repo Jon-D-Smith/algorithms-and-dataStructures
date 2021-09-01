@@ -15,4 +15,11 @@ function flattenArray(array) {
   return flatArray;
 }
 
+function flattenArrayB(array) {
+  return array.reduce((a, b) => {
+    return a.concat(b);
+  });
+}
+
 console.log(flattenArray(array));
+console.log(flattenArrayB(array));
