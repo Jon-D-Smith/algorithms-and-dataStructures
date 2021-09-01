@@ -50,10 +50,7 @@ function arrayChunksC(array, len){
     return chunkedArr
 }
 
-// Using the spread operator
-function arrayChunksD(array){
-    return [].concat(...array)
-}
+
 
 
 arrayChunks(array, 3)
