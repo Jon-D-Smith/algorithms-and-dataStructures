@@ -51,6 +51,8 @@ function arrayChunksC(array, len){
 }
 
 
+
+
 arrayChunks(array, 3)
 console.log(arrayChunksB(array, 3))
 console.log(arrayChunksC(array, 3))

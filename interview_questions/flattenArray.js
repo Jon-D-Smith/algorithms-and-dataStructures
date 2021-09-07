@@ -21,5 +21,11 @@ function flattenArrayB(array) {
   });
 }
 
+// Using the spread operator
+function flattenArrayC(array){
+  return [].concat(...array)
+}
+
 console.log(flattenArray(array));
 console.log(flattenArrayB(array));
+console.log(flattenArrayC(array));
