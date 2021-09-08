@@ -8,6 +8,6 @@ function reverse(string, newStr=[], i=0){
     }
     newStr[i] = string[string.length - (i+1)]
     reverse(string, newStr, i+=1)
-    return newStr
+    return newStr.join('')
 }
 console.log(reverse(string))
