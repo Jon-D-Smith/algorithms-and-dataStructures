@@ -51,3 +51,7 @@ This category will include many of the previous algorithms solved recursively.
 ### Interview Questions
 
 This category will include popular interview questions, or questions that could be prompted in an interview.
+
+### Hash Tables
+
+Hash tables are a data structure with key value pairs. In javascript I will represent these generally in object notation, but could also use the built in set data structure for this purpose.
