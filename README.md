@@ -43,3 +43,11 @@ node interview_questions/fizzBuzz
   - Bubble sort is O(n^2)
 - Selection Sort
   - Selection sort is O(n^2)
+
+### Recursion
+
+This category will include many of the previous algorithms solved recursively.
+
+### Interview Questions
+
+This category will include popular interview questions, or questions that could be prompted in an interview.
